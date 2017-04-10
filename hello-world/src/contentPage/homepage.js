@@ -1,4 +1,3 @@
-import Header from '../component/H1';
 import React from 'react';
 import './Simple.css';
 

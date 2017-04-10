@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React from 'react';
 import { Row, Col} from 'reactstrap';
@@ -6,9 +6,6 @@ import { Nav, NavbarToggler, Navbar, NavLink, Collapse, NavbarBrand } from 'reac
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-const rightColStyle = {
-    width : '100px'
-};
 
 const ToggleStyle = {
     width : '60px',

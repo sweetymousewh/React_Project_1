@@ -1,9 +1,8 @@
-import Header from '../component/H1';
 import React from 'react';
 import './Simple.css';
 
 const numbers=[1,2,3,4,5];
-const listItems = numbers.map((number)=><li>{number}</li>);
+const listItems = numbers.map((number)=><li key={number.toString()}>{number}</li>);
 
 
 export default class list extends React.Component{
