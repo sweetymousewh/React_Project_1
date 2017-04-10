@@ -26,9 +26,10 @@ class App extends Component {
                 <Route path="/records" component={Records}/>
                 <Route path="/contact_us" component={Contact_us}/>
             </div>
-            <p className="App-intro">
-              <Alert>To get started, edit <code>src/App.js</code> and save to reload.</Alert>
-            </p>
+            <Alert>
+            <p>
+              To get started, edit <code>src/App.js</code> and save to reload.
+            </p></Alert>
           </div>
         </Router>
     );

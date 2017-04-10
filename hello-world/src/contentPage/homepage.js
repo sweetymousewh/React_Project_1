@@ -10,7 +10,6 @@ export default class homepage extends React.Component{
                 <div>
                     <h1>Homepage</h1>
                 </div>
-                <p classID="123">123</p>
             </div>
         );
     }

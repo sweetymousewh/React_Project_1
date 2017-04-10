@@ -11,7 +11,7 @@ const rightColStyle = {
 };
 
 const ToggleStyle = {
-    width : '100px',
+    width : '60px',
     margin : 'auto auto auto 20px',
     backgroundColor : 'lightblue'
 };
@@ -23,6 +23,11 @@ const centerRow = {
     backgroundColor: 'transparent',
     height : '40px'
  }
+const LinkStyle = {
+    marginLeft: '20px',
+    display:'inline-block'
+}
+
 
 
 export default class Header extends React.Component{
@@ -48,7 +53,7 @@ export default class Header extends React.Component{
                 <Row>
                     <Col xs="12" md="8">
                         <Row>
-                            <Col md="2">
+                            <Col md="1">
                                 <NavbarToggler style={ToggleStyle} onClick={this.toggleNavbar} />
                             </Col>
                             <Col md="2">
@@ -62,10 +67,10 @@ export default class Header extends React.Component{
                             <Collapse className="navbar-toggleable-md" isOpen={!this.state.collapsed}>
                                         <NavbarBrand>
                                             <Nav>
-                                                <NavLink><Link to="/home">Homepage</Link></NavLink>
-                                                <NavLink><Link to="/list">List</Link></NavLink>
-                                                <NavLink><Link to="/records">Records</Link></NavLink>
-                                                <NavLink><Link to="/contact_us">Contact us</Link></NavLink>
+                                                <Link style={LinkStyle} to="/home">Homepage</Link>
+                                                <Link style={LinkStyle} to="/list">List</Link>
+                                                <Link style={LinkStyle} to="/records">Records</Link>
+                                                <Link style={LinkStyle} to="/contact_us">Contact us</Link>
                                             </Nav>
                                         </NavbarBrand>
                             </Collapse>
