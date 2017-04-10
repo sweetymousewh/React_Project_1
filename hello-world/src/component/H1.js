@@ -4,6 +4,7 @@ import React from 'react';
 import { Row, Col} from 'reactstrap';
 import { Nav, NavbarToggler, Navbar, NavLink, Collapse, NavbarBrand } from 'reactstrap';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const rightColStyle = {
     width : '100px'
@@ -61,10 +62,10 @@ export default class Header extends React.Component{
                             <Collapse className="navbar-toggleable-md" isOpen={!this.state.collapsed}>
                                         <NavbarBrand>
                                             <Nav>
-                                                <NavLink href="#">Homepage</NavLink>
-                                                <NavLink href="#">List</NavLink>
-                                                <NavLink href="#">Records</NavLink>
-                                                <NavLink href="#">Contact us</NavLink>
+                                                <NavLink><Link to="/home">Homepage</Link></NavLink>
+                                                <NavLink><Link to="/list">List</Link></NavLink>
+                                                <NavLink><Link to="/records">Records</Link></NavLink>
+                                                <NavLink><Link to="/contact_us">Contact us</Link></NavLink>
                                             </Nav>
                                         </NavbarBrand>
                             </Collapse>
